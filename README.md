@@ -174,7 +174,8 @@ EduGen AI follows a Retrieval-Augmented Generation (RAG) architecture.
 
 * Docker
 * DockerHub
-* AWS EC2 (Deployment Ready)
+* Streamlit cloud (Live link)
+* AWS EC2 (Deployment Ready) # for future
 
 ---
 
@@ -215,7 +216,7 @@ edugen-ai/
 ### Clone Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPO_URL>
+git clone https://github.com/Amankhan1009/EDUGEN-AI.git
 cd edugen-ai
 ```
 
@@ -266,7 +267,7 @@ streamlit run frontend/app.py
 ### Pull Docker Image
 
 ```bash
-docker pull <YOUR_DOCKERHUB_USERNAME>/edugen-ai:latest
+docker pull amankhan1009/edugen-ai:latest
 ```
 
 ### Create .env File
@@ -278,7 +279,7 @@ GROQ_API_KEY=YOUR_GROQ_API_KEY
 ### Run Container
 
 ```bash
-docker run -p 8501:8501 --env-file .env <YOUR_DOCKERHUB_USERNAME>/edugen-ai:latest
+docker run -p 8501:8501 --env-file .env amankhan1009/edugen-ai:latest
 ```
 
 ### Open Application
