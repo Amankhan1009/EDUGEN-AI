@@ -1,0 +1,15 @@
+venv
+.git
+__pycache__
+
+.env
+
+uploads
+exports
+vectorstore
+resumes
+
+tests
+
+.vscode
+.DS_Store
