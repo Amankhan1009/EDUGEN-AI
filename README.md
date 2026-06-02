@@ -64,22 +64,60 @@ The platform enables students to upload study materials, interact with an AI tut
 
 ## 🏗️ System Architecture
 
-User
-↓
-Streamlit Frontend
-↓
-LangChain Orchestration
-↓
-Chroma Vector Database
-↓
-BAAI/bge-small-en Embeddings
-↓
-Groq Llama 3.3 70B
-↓
-AI Response
+![Architecture](assets/architecture.png)
+EduGen AI follows a Retrieval-Augmented Generation (RAG) architecture. User-uploaded PDFs are processed through a PDF Loader and Text Splitter, converted into vector embeddings using BAAI/bge-small-en, and stored in ChromaDB. LangChain orchestrates retrieval and prompt construction, while Groq's Llama 3.3 70B model generates personalized educational responses, quizzes, notes, flashcards, and interview content. The entire application is containerized using Docker and is deployment-ready.
+---
+## 📸 Application Screenshots
+
+### 🏠 Home Page
+
+![Home Page](assets/screenshots/01-home.png)
 
 ---
 
+### 💬 AI Tutor Chat
+
+![Chat](assets/screenshots/02-chat.png)
+
+---
+
+### 📝 Quiz Generator
+
+![Quiz](assets/screenshots/03-quiz.png)
+
+---
+
+### 📚 Notes Generator
+
+![Notes](assets/screenshots/04-notes.png)
+
+---
+
+### 🃏 Flashcards Generator
+
+![Flashcards](assets/screenshots/05-flashcards.png)
+
+---
+
+### 🎯 Mock Interview
+
+![Interview](assets/screenshots/06-interview.png)
+
+---
+
+### 💼 Resume Interview
+
+![Resume Interview](assets/screenshots/07-resume-interview.png)
+
+---
+
+### 📈 Analytics Dashboard
+
+![Analytics](assets/screenshots/08-analytics.png)
+
+---
+
+## 🛠️ Tech Stack
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -234,22 +272,6 @@ docker run -p 8501:8501 --env-file .env <YOUR_DOCKERHUB_USERNAME>/edugen-ai:late
 ```text
 http://localhost:8501
 ```
-
----
-
-## 📸 Screenshots
-
-Add screenshots here:
-
-* Home Page
-* AI Tutor Chat
-* Quiz Generator
-* Notes Generator
-* Flashcard Generator
-* Mock Interview
-* Resume Interview
-* Analytics Dashboard
-* Docker Deployment
 
 ---
 
