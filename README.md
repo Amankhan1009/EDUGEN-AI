@@ -65,8 +65,22 @@ The platform enables students to upload study materials, interact with an AI tut
 ## 🏗️ System Architecture
 
 ![Architecture](assets/architecture.png)
-EduGen AI follows a Retrieval-Augmented Generation (RAG) architecture. User-uploaded PDFs are processed through a PDF Loader and Text Splitter, converted into vector embeddings using BAAI/bge-small-en, and stored in ChromaDB. LangChain orchestrates retrieval and prompt construction, while Groq's Llama 3.3 70B model generates personalized educational responses, quizzes, notes, flashcards, and interview content. The entire application is containerized using Docker and is deployment-ready.
 ---
+
+### Architecture Overview
+
+EduGen AI follows a Retrieval-Augmented Generation (RAG) architecture.
+
+- User-uploaded PDFs are processed using PDF Loader and Text Splitter.
+- Text chunks are converted into vector embeddings using **BAAI/bge-small-en**.
+- Embeddings are stored in **ChromaDB** for semantic retrieval.
+- **LangChain** orchestrates retrieval, prompt engineering, and workflow execution.
+- **Groq Llama 3.3 70B** generates personalized educational responses.
+- The platform supports Chat, Quiz Generation, Notes, Flashcards, Mock Interviews, and Resume Interview Preparation.
+- The entire application is containerized using **Docker** and is deployment-ready.
+
+---
+
 ## 📸 Application Screenshots
 
 ### 🏠 Home Page
