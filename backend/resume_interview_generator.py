@@ -37,7 +37,7 @@ def generate_resume_questions(
             "GROQ_API_KEY"
         ),
         model_name=
-        "llama-3.3-70b-versatile"
+        "openai/gpt-oss-120b"
     )
 
     # Prompt
